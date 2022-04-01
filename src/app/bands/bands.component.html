@@ -1,0 +1,19 @@
+<div>
+    <h3>Band History Chart</h3>
+    <table class="tabel table-success tabel-striped">
+      <thead>
+        <th>Band Name</th>
+        <th>Town</th>
+        <th>State</th>
+        <th>Start </th>
+        <th>Ending </th>
+      </thead>
+        <tr *ngFor="let tr of bandHistory">
+          <td>{{ tr.bName }}</td>
+          <td>{{ tr.bTown }}</td>
+          <td>{{ tr.bState }}</td>
+          <td>{{ tr.bFyear }}</td>
+          <td>{{ tr.bLyear }}</td>           
+        </tr>
+    </table>
+</div>
